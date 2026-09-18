@@ -1,49 +1,71 @@
+<div align="center">
+
 # 🎯 Number Guessing Game
 
-A simple browser-based Number Guessing Game built with **HTML, CSS, and JavaScript**.
+### A simple, interactive browser game built with HTML, CSS & JavaScript.
 
-The player has to guess a randomly generated number between **1 and 100**. The application provides feedback after each guess and keeps track of the number of attempts.
+Guess the randomly generated number between **1 and 100** with helpful hints and an attempt counter.
 
-## 🚀 Features
+<br>
 
-- 🎲 Generates a random number between 1 and 100
-- ⬇️ Indicates when the guess is too low
-- ⬆️ Indicates when the guess is too high
-- 🎉 Detects the correct guess
-- 🔢 Tracks the number of attempts
-- 🔄 Allows the player to start a new game
-- ⚠️ Validates user input
-- 📱 Runs directly in the browser
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 🛠️ Technologies Used
+</div>
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+---
+
+## 🎮 About the Game
+
+**Number Guessing Game** is a small browser-based project created to practice JavaScript fundamentals and DOM interaction.
+
+The game generates a random number between **1 and 100**. The player keeps submitting guesses until the correct number is found.
+
+After every valid guess, the game provides a hint:
+
+- ⬇️ **Too Low** — Try a higher number
+- ⬆️ **Too High** — Try a lower number
+- 🎉 **Correct** — You found the number!
+
+Once the game is completed, the player can start a new round using the **Play Again** button.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🎲 Random Number | Generates a new number between 1 and 100 |
+| 💡 Guess Hints | Tells the player whether the guess is too high or too low |
+| 🔢 Attempt Counter | Tracks valid guesses made by the player |
+| ⚠️ Input Validation | Prevents empty or out-of-range guesses |
+| 🏆 Win Detection | Detects when the player finds the secret number |
+| 🔄 Play Again | Resets the game and generates a new secret number |
+| 🌐 Browser Based | Runs directly in a modern web browser |
+
+---
 
 ## 🧠 Concepts Practiced
 
+This project helped me practice:
+
 - Variables and data types
-- Conditional statements
+- `if / else if / else`
+- Comparison operators
 - Functions
 - Loops
-- Arrays
-- Comparison operators
 - User input
 - DOM manipulation
 - Event handling
 - Template literals
-- `Math.random()` and `Math.floor()`
+- `Math.random()`
+- `Math.floor()`
 - Application state
 - Input validation
+- Updating UI based on user actions
 
-## 🎮 How to Play
-
-1. Enter a number between **1 and 100**.
-2. Click **Submit Guess**.
-3. The game will tell you whether your guess is too low, too high, or correct.
-4. Continue guessing until you find the number.
-5. Once you win, click **Play Again** to start a new game.
+---
 
 ## 📂 Project Structure
 
@@ -55,10 +77,19 @@ Number-Guessing-Game/
 ├── style.css
 └── README.md
 ```
+---
 
-## 💻 Running the Project
+## 🚀 Getting Started
 
-This project does not require any installation, dependencies, or build tools.
+### Prerequisites
+
+You only need:
+
+- A modern web browser
+- Git, if you want to clone the repository
+- VS Code + Live Server (optional)
+
+**No Node.js, npm, database, or external dependencies are required.**
 
 ### 1. Clone the Repository
 
@@ -74,62 +105,107 @@ For example:
 git clone https://github.com/Goushik-Raja-R/Number-Guessing-Game.git
 ```
 
-### 2. Navigate to the Project
+### 2. Open the Project Folder
 
 ```bash
 cd Number-Guessing-Game
 ```
 
-### 3. Open the Project
+### 3. Run the Game
 
 #### Option 1 — Open Directly
 
-Open `index.html` in any modern web browser.
+Open `index.html` in your browser.
 
 #### Option 2 — Use VS Code + Live Server
 
 1. Open the project folder in VS Code.
-2. Install the **Live Server** extension if you don't already have it.
+2. Install the **Live Server** extension.
 3. Right-click `index.html`.
 4. Select **Open with Live Server**.
 5. The game will open in your browser.
 
-## 📱 Using the Project on Another Device
+---
 
-You can use this project on another computer by cloning the GitHub repository.
+## 💻 Use the Project on Another Device
 
-Make sure **Git** is installed on the device, then run:
+Because this is a simple frontend project, you can use it on another computer without installing project dependencies.
+
+### On the new device:
+
+**1. Install Git**
+
+Then clone the repository:
 
 ```bash
 git clone https://github.com/<your-username>/<your-repository-name>.git
 ```
 
-After cloning:
+**2. Enter the project directory**
 
 ```bash
 cd Number-Guessing-Game
 ```
 
-Then open `index.html` in a browser.
+**3. Open `index.html`**
 
-No Node.js, npm, database, or additional dependencies are required.
+You can open it directly in a browser, or use VS Code + Live Server.
 
-### 🔄 Getting the Latest Version
+That's it. 🎯
 
-If you have already cloned the repository and want to get the latest changes:
+### 🔄 Get the Latest Changes
+
+If the repository is already cloned on another device:
 
 ```bash
 git pull origin main
 ```
 
-This downloads the latest version of the project from GitHub.
-
-## 📚 What I Learned
-
-This project helped me understand how JavaScript interacts with HTML elements through the DOM and how application state changes based on user actions.
-
-It was also my first step toward moving from solving individual programming exercises to building a complete interactive application.
+This downloads the latest version from GitHub.
 
 ---
 
-**Built as part of my journey toward becoming a stronger application and game developer. 🚀**
+## 🕹️ How to Play
+
+```text
+        START
+          │
+          ▼
+   Generate Number
+      1 — 100
+          │
+          ▼
+     Enter a Guess
+          │
+          ▼
+     ┌─────────────┐
+     │  Compare    │
+     │    Guess    │
+     └─────────────┘
+       │    │    │
+       ▼    ▼    ▼
+     LOW  HIGH  CORRECT
+       │    │      │
+       └────┴──────┘
+              │
+              ▼
+         Play Again
+```
+
+---
+
+## 📚 What I Learned
+
+This project was a practical step from solving individual JavaScript exercises to building a complete interactive application.
+
+While building it, I practiced connecting JavaScript logic with HTML elements, handling user events, managing application state, validating input, and updating the UI based on the player's actions.
+
+---
+
+<div align="center">
+
+### 🚀 Built while learning. Built to improve.
+
+**HTML • CSS • JavaScript**
+
+</div>
