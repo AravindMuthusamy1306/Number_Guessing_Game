@@ -102,7 +102,7 @@ git clone https://github.com/<your-username>/<your-repository-name>.git
 For example:
 
 ```bash
-git clone https://github.com/Goushik-Raja-R/Number-Guessing-Game.git
+git clone https://github.com/AravindMuthusamy1306/Number-Guessing-Game.git
 ```
 
 ### 2. Open the Project Folder
